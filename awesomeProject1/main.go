@@ -13,7 +13,7 @@ func main() {
 	router := gin.Default()
 
 	// Initialize database connection pool
-	pool, err := database.NewDBPool("postgresql://username:password@localhost:5432/database_name")
+	pool, err := database.NewDBPool("postgresql://username:password@localhost:5432/otp")
 	if err != nil {
 		log.Fatalf("Unable to connect to database: %v\n", err)
 	}
